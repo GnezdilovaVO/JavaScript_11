@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #photo-container,
+      #photo-container_liked {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .photo {
+        flex: 1 1 calc(33.33% - 20px);
+        margin: 10px;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+      }
+
+      .photo img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="photo-container"></div>
+    <button class="like">Like</button>
+    <button class="dislike">Dislike</button>
+    <div class="count_like"></div>
+    <div id="photo-container_liked"></div>
+  </body>
+</html>
